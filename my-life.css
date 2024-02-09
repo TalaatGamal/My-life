@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+}
+.web-site{
+    min-width: max-content;
+    min-height: max-content; 
+    background-image: url(https://en.idei.club/pic1/uploads/posts/2023-12/1702523518_en-idei-club-p-billionaire-lifestyle-wallpaper-interer-kr-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.home{
+    height: 97.2vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    background-color: #0000006a;
+}
+.home .content{
+    color: #ffffff;
+    min-height: max-content;
+    min-width: max-content;
+    display: block;
+    margin-left : 23vw;
+    margin-right: 23vw;
+    margin-top: 25vh;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #ffffff00;
+}
+.arrow {
+    position: absolute;
+    /* bottom: 50px; */
+    right: 49vw;
+    top: 60vh;
+    font-size: 24px;
+    color: #fff;
+    animation: arrow-animation 3s infinite;
+}
+
+@keyframes arrow-animation {
+    0%{
+        top: 60vh;
+        opacity: 0;
+    }
+    50%{
+        top: 62vh;
+        opacity: 1;
+    }
+    100%{
+        top: 62vh;
+        opacity: 0;
+    }
+}
+.arrow img{
+    width: 30px;
+}
+.home .content h1{
+    background-color: #00000000;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home .content p{
+    background-color: #00000000;
+    border-radius: 15px;
+    max-width: max-content;
+    margin-left: 250px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

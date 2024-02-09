@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="my-life.css">
+    <link rel="icon" href="imgs/self-love.png">
+    <title> My life </title>
+</head>
+<body>
+    <div class="web-site">
+        <div class="home">
+            <div class="content">
+                <h1> Hello 👋 , I'm Talaat and this is my website </h1>
+                <br>
+                <p> This is my website for my life </p>
+            </div>
+            <span class="arrow"><img src="imgs/tdyuody.png" alt="arrow"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- كود برمجي لتشغيل مقطع صوتي عند تشغيل الموقع الإلكتروني باستخدام مكتبة 
+        JavaScript Howler.js: -->
+
+        <!-- شرح الكود:
+
+        السطر 4: تحميل مكتبة Howler.js من CDN.
+        السطر 10: إنشاء مُتغير جديد من نوع Howl وتحديد مسار المقطع الصوتي.
+        السطر 15: تشغيل المقطع الصوتي عند تحميل الصفحة.
+        ملاحظة: تأكد من تغيير مسار المقطع الصوتي في السطر 10 إلى مسار المقطع الصوتي الخاص بك.
+        
+        يمكنك أيضًا استخدام مكتبات JavaScript أخرى مثل SoundJS لتشغيل المقاطع الصوتية على موقعك الإلكتروني. -->
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+        <script>
+            // تحميل المقطع الصوتي
+            var sound = new Howl({
+                src: ["sounds/تحيا-مصر.mp3"]
+            });
+    
+            // تشغيل المقطع الصوتي عند تحميل الصفحة
+            window.onload = function() {
+                sound.play();
+            };
+        
+          // إيقاف تشغيل المقطع الصوتي عند مغادرة الموقع
+            document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                sound.stop();
+            } else {
+                sound.play();
+            }
+        });
+
+        </script>
+    
+</body>
+</html>
